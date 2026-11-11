@@ -1,0 +1,60 @@
+{
+  "defaults": {
+    "backend": "vllm",
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "llm_kwargs": {
+      "gpu_memory_utilization": 0.9
+    }
+  },
+  "models": {
+    "Model_1_qwen_35_4B": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_3_Qwen2.5-7B-Instruct": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_4_qwen3-8b": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_5_qwen_35_9B": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_6_Hunyuan-A13B-Instruct": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0",
+      "llm_kwargs": {
+        "trust_remote_code": true
+      }
+    },
+    "Model_7_Qwen3-32B": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_8_Qwen3_5-27B": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_10_Qwen2.5-Coder-7b-Instruct": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_11_Meta-Llama-3.1-8B-Instruct": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_12_Mistral-7B-Instruct-v0.3": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    },
+    "Model_13_Qwen2.5-Coder-14B-Instruct": {
+      "model_path": "your path",
+      "cuda_visible_devices": "0"
+    }
+  }
+}

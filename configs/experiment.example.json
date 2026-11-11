@@ -1,0 +1,42 @@
+{
+  "models": "your path",
+  "work_dir": "your path",
+  "data": {
+    "train_json": "your path",
+    "train_db_root": "your path",
+    "train_tables_json": "your path",
+    "train_schema_dir": null,
+    "dev_json": "your path",
+    "dev_db_root": "your path",
+    "dev_tables_json": "your path",
+    "dev_schema_dir": null
+  },
+  "training": {
+    "reuse_history": false,
+    "history_gpu_ids": "0",
+    "training_config": null,
+    "anchor_count": 100,
+    "sql_timeout": 3.0,
+    "max_result_rows": 500
+  },
+  "routing": {
+    "top_k": 600,
+    "difficulty_weight": 0,
+    "skeleton_weight": 10,
+    "accuracy_weight": 0.6,
+    "token_weight": 0.2,
+    "uncertainty_weight": 0.2,
+    "beta_alpha0": 1.0,
+    "beta_beta0": 1.0,
+    "position_uncertainty_kappa": 1.0,
+    "quality_quantile": 0.05,
+    "quality_tolerance": 0.02
+  },
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "batch_size": 16,
+    "seed": 42
+  },
+  "history_dir": "your path"
+}
